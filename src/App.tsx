@@ -10,8 +10,8 @@ const App: FC = () => {
   return (
       <div>
         {
-          RickAndMorty.map((character: ICharacter) =>
-              <Character character={character}/>)
+          RickAndMorty.map((character: ICharacter, index) =>
+              <Character character={character} key={index}/>)
         }
       </div>
   );
